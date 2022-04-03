@@ -4,6 +4,18 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'com.github.shindonghwi'
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+            }
+        }
+    }
+}
+
 android {
     compileSdk 31
 
