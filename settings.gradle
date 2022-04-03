@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "JetpackCompose_SkeletonView"
 include ':app'
+include ':skeleton_ui'
