@@ -45,7 +45,9 @@ private fun SkeletonView(
         Color(android.graphics.Color.parseColor("#F0F2F4")),
         Color(android.graphics.Color.parseColor("#E5E7EB")),
     ),
-    repeatDelayTime: Int = 300 // 로딩 뷰 반복 딜레이 타임
+    repeatMode: RepeatMode = RepeatMode.Restart,
+    repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
+    speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
 ) {
     BoxWithConstraints(
         modifier = modifier
@@ -60,11 +62,11 @@ private fun SkeletonView(
             targetValue = (cardWidthPx + gradientWidth),
             animationSpec = infiniteRepeatable(
                 animation = tween(
-                    durationMillis = 1000,
+                    durationMillis = speed,
                     easing = LinearEasing,
                     delayMillis = repeatDelayTime
                 ),
-                repeatMode = RepeatMode.Restart
+                repeatMode = repeatMode
             )
         )
         val yCardShimmer = infiniteTransition.animateFloat(
@@ -72,11 +74,11 @@ private fun SkeletonView(
             targetValue = (cardHeightPx + gradientWidth),
             animationSpec = infiniteRepeatable(
                 animation = tween(
-                    durationMillis = 1000,
+                    durationMillis = speed,
                     easing = LinearEasing,
                     delayMillis = repeatDelayTime
                 ),
-                repeatMode = RepeatMode.Restart
+                repeatMode = repeatMode
             )
         )
 
