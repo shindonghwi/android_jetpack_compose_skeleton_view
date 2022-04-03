@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
                             .fillMaxWidth()
                             .height(100.dp)
                             .clip(RoundedCornerShape(8.dp)),
+                        repeatDelayTime = 100
                     )
                 }
             }
@@ -44,6 +45,7 @@ private fun SkeletonView(
         Color(android.graphics.Color.parseColor("#F0F2F4")),
         Color(android.graphics.Color.parseColor("#E5E7EB")),
     ),
+    repeatDelayTime: Int = 300 // 로딩 뷰 반복 딜레이 타임
 ) {
     BoxWithConstraints(
         modifier = modifier
@@ -60,7 +62,7 @@ private fun SkeletonView(
                 animation = tween(
                     durationMillis = 1000,
                     easing = LinearEasing,
-                    delayMillis = 300
+                    delayMillis = repeatDelayTime
                 ),
                 repeatMode = RepeatMode.Restart
             )
@@ -72,7 +74,7 @@ private fun SkeletonView(
                 animation = tween(
                     durationMillis = 1000,
                     easing = LinearEasing,
-                    delayMillis = 300
+                    delayMillis = repeatDelayTime
                 ),
                 repeatMode = RepeatMode.Restart
             )
