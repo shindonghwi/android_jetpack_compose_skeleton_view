@@ -13,8 +13,9 @@ import androidx.compose.ui.graphics.Brush.Companion.linearGradient
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 
+@Keep
 @Composable
-fun SkeletonView(
+public fun SkeletonView(
     modifier: Modifier = Modifier,
     colorList: List<Color> = listOf(
         Color(android.graphics.Color.parseColor("#E5E7EB")),
@@ -28,7 +29,6 @@ fun SkeletonView(
     SkeletonItemView(modifier, colorList, repeatMode, repeatDelayTime, speed)
 }
 
-@Keep
 @Composable
 private fun SkeletonItemView(
     modifier: Modifier = Modifier,

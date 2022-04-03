@@ -1,3 +1,3 @@
 -keep class dev.wolf.skeleton_ui.SkeletonViewKt {
-    private <methods>;
+    public <methods>;
 }
