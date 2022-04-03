@@ -1,19 +1,19 @@
 package dev.wolf.skeleton_ui
 
-//import androidx.compose.animation.core.*
-//import androidx.compose.foundation.background
-//import androidx.compose.foundation.layout.Box
-//import androidx.compose.foundation.layout.BoxWithConstraints
-//import androidx.compose.foundation.layout.fillMaxSize
-//import androidx.compose.runtime.Composable
-//import androidx.compose.ui.Modifier
-//import androidx.compose.ui.geometry.Offset
-//import androidx.compose.ui.graphics.Brush.Companion.linearGradient
-//import androidx.compose.ui.graphics.Color
-//import androidx.compose.ui.platform.LocalDensity
-//
-//@Composable
-//fun SkeletonView(
+import androidx.compose.animation.core.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush.Companion.linearGradient
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalDensity
+
+@Composable
+fun SkeletonView(
 //    modifier: Modifier = Modifier,
 //    colorList: List<Color> = listOf(
 //        Color(android.graphics.Color.parseColor("#E5E7EB")),
@@ -23,7 +23,7 @@ package dev.wolf.skeleton_ui
 //    repeatMode: RepeatMode = RepeatMode.Restart,
 //    repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
 //    speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
-//) {
+) {
 //    BoxWithConstraints(
 //        modifier = modifier
 //    ) {
@@ -69,4 +69,4 @@ package dev.wolf.skeleton_ui
 //                .background(brush = brush)
 //        )
 //    }
-//}
+}
