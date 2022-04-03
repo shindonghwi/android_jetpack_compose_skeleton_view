@@ -12,7 +12,6 @@ import androidx.compose.ui.graphics.Brush.Companion.linearGradient
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
 
-
 @Composable
 fun SkeletonView(
     modifier: Modifier = Modifier,
