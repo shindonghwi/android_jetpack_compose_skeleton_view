@@ -57,5 +57,5 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
     implementation 'androidx.activity:activity-compose:1.4.0'
 
-    implementation 'com.github.shindonghwi:JetpackCompose_SkeletonView:1.0.0v'
+    implementation 'com.github.shindonghwi:JetpackCompose_SkeletonView:1.0.3v'
 }
