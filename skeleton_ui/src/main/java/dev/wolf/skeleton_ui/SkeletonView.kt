@@ -14,15 +14,15 @@ import androidx.compose.ui.platform.LocalDensity
 
 @Composable
 fun SkeletonView(
-//    modifier: Modifier = Modifier,
-//    colorList: List<Color> = listOf(
-//        Color(android.graphics.Color.parseColor("#E5E7EB")),
-//        Color(android.graphics.Color.parseColor("#F0F2F4")),
-//        Color(android.graphics.Color.parseColor("#E5E7EB")),
-//    ),
-//    repeatMode: RepeatMode = RepeatMode.Restart,
-//    repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
-//    speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
+    modifier: Modifier = Modifier,
+    colorList: List<Color> = listOf(
+        Color(android.graphics.Color.parseColor("#E5E7EB")),
+        Color(android.graphics.Color.parseColor("#F0F2F4")),
+        Color(android.graphics.Color.parseColor("#E5E7EB")),
+    ),
+    repeatMode: RepeatMode = RepeatMode.Restart,
+    repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
+    speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
 ) {
 //    BoxWithConstraints(
 //        modifier = modifier
