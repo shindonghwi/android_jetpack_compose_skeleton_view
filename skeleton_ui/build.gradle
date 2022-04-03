@@ -58,7 +58,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.shindonghwi'
                 artifactId = 'JetpackCompose_SkeletonView'
-                version = '1.0.4'
+                version = 'v1.0.4'
             }
         }
     }
