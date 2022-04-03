@@ -1,5 +1,6 @@
 package dev.wolf.skeleton_ui
 
+import androidx.annotation.Keep
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -24,6 +25,22 @@ fun SkeletonView(
     repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
     speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
 ) {
+    SkeletonItemView(modifier, colorList, repeatMode, repeatDelayTime, speed)
+}
+
+@Keep
+@Composable
+private fun SkeletonItemView(
+    modifier: Modifier = Modifier,
+    colorList: List<Color> = listOf(
+        Color(android.graphics.Color.parseColor("#E5E7EB")),
+        Color(android.graphics.Color.parseColor("#F0F2F4")),
+        Color(android.graphics.Color.parseColor("#E5E7EB")),
+    ),
+    repeatMode: RepeatMode = RepeatMode.Restart,
+    repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
+    speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
+){
     BoxWithConstraints(
         modifier = modifier
     ) {
