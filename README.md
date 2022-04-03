@@ -49,6 +49,28 @@ dependencies {
 ```
 <br/>
 
+
+### 3. Sample Use
+```
+
+/**
+* @param modifier         | modifier 수정자
+* @param colorList        | 스켈레톤 UI에 보일 색상 리스트 
+* @param repeatMode       | 반복모드 설정 
+* @param repeatDelayTime  | 스켈레톤 UI의 한 사이클이 지난 후 딜레이 타임 설정
+* @param speed            | 스켈레톤 UI의 속도
+*/
+
+SkeletonView(
+    modifier = Modifier
+        .fillMaxWidth()
+        .height(100.dp)
+        .clip(RoundedCornerShape(8.dp)),
+    repeatDelayTime = 100
+)
+```
+<br/>
+
 ## License 
  ```
 Copyright 2022 ShinDongHwi
