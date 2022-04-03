@@ -24,49 +24,49 @@ fun SkeletonView(
     repeatDelayTime: Int = 300, // 로딩 뷰 반복 딜레이 타임
     speed: Int = 1000 // 처음부터 끝까지 갈때까지 시간,
 ) {
-//    BoxWithConstraints(
-//        modifier = modifier
-//    ) {
-//        val cardWidthPx = with(LocalDensity.current) { maxWidth.toPx() }
-//        val cardHeightPx = with(LocalDensity.current) { maxHeight.toPx() }
-//        val gradientWidth: Float = (0.3f * cardHeightPx) // 대각선의 가로 넓이
-//
-//        val infiniteTransition = rememberInfiniteTransition()
-//        val xCardShimmer = infiniteTransition.animateFloat(
-//            initialValue = 0f,
-//            targetValue = (cardWidthPx + gradientWidth),
-//            animationSpec = infiniteRepeatable(
-//                animation = tween(
-//                    durationMillis = speed,
-//                    easing = LinearEasing,
-//                    delayMillis = repeatDelayTime
-//                ),
-//                repeatMode = repeatMode
-//            )
-//        )
-//        val yCardShimmer = infiniteTransition.animateFloat(
-//            initialValue = 0f,
-//            targetValue = (cardHeightPx + gradientWidth),
-//            animationSpec = infiniteRepeatable(
-//                animation = tween(
-//                    durationMillis = speed,
-//                    easing = LinearEasing,
-//                    delayMillis = repeatDelayTime
-//                ),
-//                repeatMode = repeatMode
-//            )
-//        )
-//
-//        val brush = linearGradient(
-//            colors = colorList,
-//            start = Offset(xCardShimmer.value - gradientWidth, yCardShimmer.value - gradientWidth),
-//            end = Offset(xCardShimmer.value, yCardShimmer.value)
-//        )
-//
-//        Box(
-//            modifier = Modifier
-//                .fillMaxSize()
-//                .background(brush = brush)
-//        )
-//    }
+    BoxWithConstraints(
+        modifier = modifier
+    ) {
+        val cardWidthPx = with(LocalDensity.current) { maxWidth.toPx() }
+        val cardHeightPx = with(LocalDensity.current) { maxHeight.toPx() }
+        val gradientWidth: Float = (0.3f * cardHeightPx) // 대각선의 가로 넓이
+
+        val infiniteTransition = rememberInfiniteTransition()
+        val xCardShimmer = infiniteTransition.animateFloat(
+            initialValue = 0f,
+            targetValue = (cardWidthPx + gradientWidth),
+            animationSpec = infiniteRepeatable(
+                animation = tween(
+                    durationMillis = speed,
+                    easing = LinearEasing,
+                    delayMillis = repeatDelayTime
+                ),
+                repeatMode = repeatMode
+            )
+        )
+        val yCardShimmer = infiniteTransition.animateFloat(
+            initialValue = 0f,
+            targetValue = (cardHeightPx + gradientWidth),
+            animationSpec = infiniteRepeatable(
+                animation = tween(
+                    durationMillis = speed,
+                    easing = LinearEasing,
+                    delayMillis = repeatDelayTime
+                ),
+                repeatMode = repeatMode
+            )
+        )
+
+        val brush = linearGradient(
+            colors = colorList,
+            start = Offset(xCardShimmer.value - gradientWidth, yCardShimmer.value - gradientWidth),
+            end = Offset(xCardShimmer.value, yCardShimmer.value)
+        )
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(brush = brush)
+        )
+    }
 }
