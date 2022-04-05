@@ -8,6 +8,9 @@
 ![skeleton_ui](https://user-images.githubusercontent.com/45490440/161437799-208d4bac-91bf-47f5-960a-6f7258636cd5.gif)
 
 
+### 0. Blog
+  - [SkeletonView 포스팅](https://wolf-android-developer.medium.com/jetpackcompose-skeleton-ui-cef0ee2d2052)
+
 ---------------------------------------------------------------------------------------------------------
 
 ### 1. Setting jitpack
